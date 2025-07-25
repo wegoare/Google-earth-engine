@@ -1,0 +1,20 @@
+{
+  "name": "gee3---copy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run client\" \"npm run server\" \"npm run model\"",
+    "client": "cd client && npm start",
+    "server": "cd backend && nodemon server.js",
+    "model": "cd predictor_api && uvicorn main:app --reload --port 8000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2"
+  }
+}

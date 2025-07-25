@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+input {
+  padding: 5px;
+  margin: 5px;
+}
+button {
+  padding: 8px 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* Leaflet Map Container Styles */
+#heatmap-container {
+  z-index: 0;
+  background: #f0f0f0;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Fix for Leaflet controls */
+.leaflet-control-container {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Fix for heatmap display */
+.leaflet-heatmap-layer {
+  opacity: 0.8;
+}
+.heatmap-legend {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.heatmap-legend h4 {
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+
+.legend-scale {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
